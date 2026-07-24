@@ -1,14 +1,21 @@
+import Banner from '../components/Banner'
+import Card from '../components/Card'
+import homeBannerImg from '../assets/home-banner.png'
 import logements from '../data/logements.json'
 
 function Home() {
     return (
         <div>
-            <h1>Bienvenue sur l'Accueil</h1>
-            <ul>
-                {logements.map((item) => (
-                    <li key={item.id}>{item.title}</li>
-                ))}
-            </ul>
+            <Banner image={homeBannerImg} text="Chez vous, partout et ailleurs" />
+            <div className="cards-grid">
+                {logements.map((logement) => (
+                    <Card
+                        key={logement.id}
+                        image={logement.cover}
+                        title={logement.title}
+                    />
+                ))}    
+            </div>
         </div>
     )
 }

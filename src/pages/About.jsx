@@ -1,5 +1,12 @@
+import Banner from "../components/Banner"
+import aboutBannerImg from '../assets/about-banner.png'
+
 function About() {
-    return <h1 className="text-2xl font-bold">À propos de nous</h1>
+    return (
+        <div>
+            <Banner image={aboutBannerImg} />
+        </div>
+    )
 }
 
 export default About
