@@ -1,0 +1,52 @@
+/* Conteneur principal du Header */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0;
+    width: 100%;
+}
+
+/* Taille et proportion du logo */
+.header-logo {
+    height: 68px;
+    width: auto; 
+}
+
+/* Alignement des liens de navigation */
+.header-nav {
+    display: flex;
+    gap: 50px;
+}
+
+.header-nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Adaptation pour les écrans mobiles */
+@media (max-width: 768px) {
+    .header {
+        padding: 20px 0;
+    }
+
+    .header-logo {
+        height: 47px;
+    }
+
+    .header-nav {
+        gap: 20px;
+    }
+
+    .header-nav a {
+        font-size: 12px;
+        text-transform: uppercase; /* Textes en majuscules sur mobile selon la maquette */
+    }
+}

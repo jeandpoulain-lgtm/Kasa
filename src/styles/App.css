@@ -1,0 +1,22 @@
+/* Structure globale pour coller le Footer en bas si la page est courte */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Zone principale (Header + Contenu de la page) avec les marges Desktop */
+.app-container {
+  flex: 1; /* Pousse le footer vers le bas */
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+/* Ajustement des marges pour mobile */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 0 20px;
+  }
+}
