@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import AppRouter from './components/AppRouter'
 import './styles/App.css'
+import Footer from './components/Footer'
 
 export default function App() {
   return (
@@ -9,8 +10,8 @@ export default function App() {
       <Header />
       {/* On appelle le composant routeur ici */}
       <AppRouter />
-      
       {/* Tu pourras ajouter ton Footer ici plus tard */}
+      <Footer />
     </div>
   )
 }
