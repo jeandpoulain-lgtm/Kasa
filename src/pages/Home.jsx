@@ -5,7 +5,7 @@ import logements from '../data/logements.json'
 
 function Home() {
     return (
-        <div>
+        <main>
             <Banner image={homeBannerImg} text="Chez vous, partout et ailleurs" />
             <div className="cards-grid">
                 {logements.map((logement) => (
@@ -17,7 +17,7 @@ function Home() {
                     />
                 ))}    
             </div>
-        </div>
+        </main>
     )
 }
 

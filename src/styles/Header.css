@@ -31,6 +31,10 @@
     text-decoration: underline;
 }
 
+.header-nav a.active {
+    text-decoration: underline;
+}
+
 /* Adaptation pour les écrans mobiles */
 @media (max-width: 768px) {
     .header {

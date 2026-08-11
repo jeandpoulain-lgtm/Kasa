@@ -6,7 +6,6 @@ import '../styles/Slideshow.css'
 function Slideshow({ images, title }) {
     const [currentIndex, setCurrentIndex] = useState(0)
 
-    // On vérifie s'il y a plus d'une image
     const hasMultipleImages = images && images.length > 1
 
     const nextSlide = () => {

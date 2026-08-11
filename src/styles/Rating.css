@@ -1,0 +1,24 @@
+.rating-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+/* Taille de l'étoile sur DESKTOP (Grande) */
+.star-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* Taille de l'étoile sur MOBILE (Petite) */
+@media screen and (max-width: 768px) {
+    .rating-container {
+        gap: 5px;
+    }
+
+    .star-icon {
+        width: 18px;
+        height: 18px;
+    }
+}

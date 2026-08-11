@@ -1,0 +1,23 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-collapses {
+    width: 80%; /* Ajuste le % selon la maquette Desktop (ex: 85% ou 1000px max) */
+    max-width: 1023px;
+    margin-top: 38px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+@media screen and (max-width: 768px) {
+    .about-collapses {
+        width: 100%;
+        margin-top: 19px;
+        gap: 20px;
+    }
+}
