@@ -1,0 +1,69 @@
+===================================================================
+                  FICHE DE RÉVISION ORAL REACT - KASA
+===================================================================
+
+1. ARCHITECTURE GLOBALE (Pages vs Composants)
+-------------------------------------------------------------------
+"Mon application distingue deux types de composants : le dossier 
+pages/ pour les vues principales (Home, About, FicheLogement, 
+NotFound) reliées à React Router, et le dossier components/ pour 
+les éléments UI réutilisables (Collapse, Card, Banner, etc.) qui 
+viennent composer ces pages."
+
+
+2. COMPOSANTS DE STRUCTURE & VUES (Stateless / Présentation)
+-------------------------------------------------------------------
+
+• HEADER :
+"Le composant Header est présent sur toutes les pages. Il contient 
+le logo Kasa et une barre de navigation <nav>. J'utilise le composant 
+<NavLink> de React Router pour gérer la navigation entre l'Accueil et 
+la page 'À propos'. <NavLink> applique automatiquement une classe 
+CSS active sur le lien de la page courante pour la souligner."
+
+• FOOTER :
+"Le composant Footer est un composant de présentation statique 
+présent en bas de chaque page. Il utilise la balise sémantique 
+<footer> pour afficher le logo Kasa ainsi que la mention de copyright."
+
+• BANNER :
+"Le composant Banner est une bannière réutilisable qui reçoit une 
+image et optionnellement un texte en props. Si la prop de texte est 
+fournie, le titre s'affiche par-dessus l'image grâce au rendu 
+conditionnel ; sinon, seule l'image est rendue."
+
+• CARD :
+"Le composant Card représente une carte logement individuelle. Il 
+reçoit en props l'id, le titre et l'image de couverture. Dans la 
+page Home, on itère sur le tableau de logements avec .map() pour 
+afficher une Card par logement. L'ID permet de construire le lien de 
+redirection vers la page détaillée /logement/:id via <Link>."
+
+• RATING :
+"Le composant Rating reçoit en prop la note du logement (sur 5). Il 
+itère avec la méthode .map() sur un tableau fixe de 5 chiffres. À 
+chaque passage, une condition compare l'index du tableau à la note 
+reçue pour afficher dynamiquement une étoile rouge (active) ou une 
+étoile grise (inactive)."
+
+
+3. COMPOSANTS INTERACTIFS (Stateful / Avec état)
+-------------------------------------------------------------------
+
+• COLLAPSE :
+"Le composant Collapse est un composant interactif réutilisable. 
+Il gère un état local isOpen via useState pour ouvrir ou fermer le 
+volet. La flèche pivote dynamiquement grâce à une classe CSS 
+conditionnelle (.rotate). Le contenu s'affiche sous condition 
+(isOpen && ...) et s'adapte au type de données reçues : un paragraphe 
+<p> si c'est du texte, ou une liste <ul> / <li> si c'est un tableau 
+grâce à Array.isArray()."
+
+• SLIDESHOW (Carrousel) :
+"Le composant Slideshow gère un carrousel d'images à l'aide d'un 
+état currentIndex avec useState. Les fonctions nextSlide et prevSlide 
+mettent à jour l'index en gérant une boucle infinie. Si le logement 
+ne contient qu'une seule image (images.length > 1), la variable 
+hasMultipleImages permet de masquer automatiquement les flèches de 
+navigation et le compteur d'images."
+===================================================================

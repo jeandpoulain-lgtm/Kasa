@@ -1,16 +1,18 @@
-# React + Vite
+# Kasa — Application web de location immobilière
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 À propos
+Ce projet fait partie du parcours **Intégrateur Web** d'OpenClassrooms. L'objectif était de développer le front-end d'une application de location d'appartements entre particuliers avec **React** et **React Router**, à partir de maquettes Figma et d'un jeu de données JSON.
 
-Currently, two official plugins are available:
+## 🚀 Fonctionnalités
+- Navigation fluide entre les différentes pages (**Accueil**, **À propos**, **Fiche logement** et **Page d'erreur 404**) avec **React Router**.
+- Architecture basée sur des composants React réutilisables et modulaires (`Banner`, `Card`, `Collapse`, `Gallery`, `Rating`, `Tag`).
+- Carrousel d'images interactif avec gestion du défilement infini et compteur de photos.
+- Menus déroulants animés (*Collapse*) pour afficher les descriptions et équipements.
+- Gestion des routes inexistantes et redirection automatique vers une page 404 personnalisée.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Stack technique
+- **React** (Hooks : `useState`, `useParams`, `useNavigate`)
+- **React Router**
+- **Sass (SCSS)**
+- **Vite** (ou Create React App selon ton installation)
+- **Git & GitHub**

@@ -5,7 +5,6 @@ import '../styles/Collapse.css'
 function Collapse({ title, content }) {
     
     const [isOpen, setIsOpen] = useState(false)
-
     
     const toggleCollapse = () => {
         setIsOpen(!isOpen)
